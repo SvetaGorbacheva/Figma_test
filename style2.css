@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+HU:wght@100..400&display=swap');
+
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    width: 1900px;
+}
+
+
+#header {
+    margin-top: 124px;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.main {
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 950px;
+}
+
+#rm {
+    color: #333333;
+    margin-top: 47px;
+    font-size: 18px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    /* Включаем Flexbox */
+    gap: 20px;
+    /* Устанавливаем отступ между элементами (по желанию) */
+    border-bottom: 1px solid rgba(51, 51, 51, 0.1)
+}
+
+.line_red {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#location {
+    display: flex;
+    justify-content: flex-start;
+    opacity: 0.5;
+    width: 820px;
+    gap: 7px;
+}
+#location p{
+    font-size: 16px;
+}
+
+#location #less {
+    opacity: 0.2;
+
+}
+
+.line_red:hover {
+    border-bottom: 2px solid #D90000;
+    display: inline-block;
+}
+
+.red_class {
+    background-color: #D90000;
+    color: white;
+    width: 246px;
+    height: 38px;
+    border-radius: 19px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+
+    margin-top: 18px;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 0%;
+}
+
+#number{
+opacity: 0.5;
+margin-bottom: 2em;
+}
+
+/* для блоков
+.photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.img {
+    width: 270px;
+    height: 350px;
+    border: 1px solid black;
+    background-color: rgb(166, 106, 223);
+
+}
+*/
+.item6{
+    height: 300px;
+    background-color: #D90000;
+}
+/*
+.photo .img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}*/
+
+
+.conteiner {
+    display: grid;
+    grid-template-columns: 277px 358px 277px; /* ширина колонок */
+    gap: 20px; /* отступ между элементами */
+    row-gap: 20px;
+    width: 100%; /* чтобы сетка занимала всю ширину .main */
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    transition: filter 0.3s ease; /* Добавляем плавный переход */
+    
+}
+
+.img:hover .imgConteiner img{
+    color: #D90000;
+    filter: brightness(80%); /* Уменьшаем яркость до 80% */
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+.conteiner .img p{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#bold{
+    font-weight: 600;
+}
+.imgConteiner{
+    position: relative;
+}
+
+.imgConteiner .goOver{
+    opacity: 0;
+}
+
+.imgConteiner:hover .goOver{
+    opacity: 1;
+}
+
+.goOver{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+
+    width: 150px;
+    height: 45px;
+    text-transform: uppercase;
+    background-color: white;
+    color: #333333;
+    bottom: 3px;
+    left: 0%;
+    font-size: 12px;
+}
+.goOver p{
+    font-size: 12px;
+    
+}
+
+.goOver input{
+    border: 0px;
+    background-color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.goOver span{
+    color: #D90000;
+}
+
+#numbering{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#numbering #red{
+    color: #D90000;
+    font-weight: bold;
+}
+
+#numbering hr{
+    position: relative;
+    height: 1px;
+    width: 238.5px;
+    background-color: #333333;
+    border: 0;
+    top: 25px;
+    margin: 0%;
+}
+
+
+
+
+#rassilka1{
+    margin-top: 100px;
+}
+.rassilka {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    background-color: #F3F3F7;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.rassilka p {
+    font-size: 30px;
+    color: #333333;
+}
+
+.rassilka input[type="email"] {
+    width: 350px;
+    height: 50px;
+    border: 1px solid #9A9A9A;
+    padding: 0 20px;
+}
+
+
+.rassilka input[type="submit"] {
+    width: 200px;
+    height: 52px;
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    border: 2px solid #1A1A1A;
+    text-transform: uppercase;
+}
+
+footer{
+    display: flex;
+    background-color: #1A1A1A;
+    height: 140px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+footer div img{
+    padding: 10px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #5e5e5e;
+    border-radius: 50%;
+}
