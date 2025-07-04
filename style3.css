@@ -11,6 +11,9 @@ body {
     width: 1900px;
 }
 
+.page{
+    max-width: 1920px;
+}
 
 #header {
     margin-top: 124px;
